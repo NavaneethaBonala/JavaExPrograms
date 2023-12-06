@@ -17,7 +17,8 @@ class ExFile1 {
 			System.out.println("Name : "+ f.length());
 			System.out.println("Name : "+ f.isFile());
 			System.out.println("Name : "+ f.canRead());
-			System.out.println("Name : "+ f.canWrite());			System.out.println("Name : "+ f.getName());
+			System.out.println("Name : "+ f.canWrite());			
+			
 			System.out.println("Name : "+ f.getAbsolutePath());
 			System.out.println("Name : "+ f.lastModified());
 		}
