@@ -9,7 +9,7 @@ public class Array1 {
 			Scanner scanner = new Scanner(System.in) ;
 			int n,i;
 			int[] array;// Array Declaration			
-			System.out.println("Enter the number : ");
+			System.out.println("Enter the number of elements to add in to the Array: ");
 			n=scanner.nextInt();			
 			array=new int[n];// memory allocation						
 			System.out.println("Enter Elements into the Array");			
