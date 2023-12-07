@@ -5,7 +5,7 @@
 package inputoutputfilehandling;
 import java.io.*;
 
-class ExFile1 {
+class GetFileDetails {
 
 	public static void main(String args[]) {
 

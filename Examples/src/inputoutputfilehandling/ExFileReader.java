@@ -10,14 +10,18 @@ public class ExFileReader {
 		String str="";
 
 		while( true )
-		{      try
-		{      str=br.readLine(); // read from file
-		if(str.equals(null))
-			break;
-		System.out.println(str);
-		}
-		catch(NullPointerException e)
-		{ break; }
+		{     
+			try
+			{      
+				str=br.readLine(); // read from file
+				if(str.equals(null))
+					break;
+				System.out.println(str);
+			}
+			catch(NullPointerException e)
+			{ 
+				break; 
+			}
 		}
 		br.close();
 		fr.close();

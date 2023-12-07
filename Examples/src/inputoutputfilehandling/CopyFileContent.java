@@ -6,7 +6,7 @@ import java.io.IOException;
 /*
  * Example to copy the content from input file to output file.
  */
-public class JavaIOTest {
+public class CopyFileContent {
 	public static void main(String[] args) throws IOException {
 		
 		// FileInputStream read file from system

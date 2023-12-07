@@ -33,6 +33,7 @@ public class ExFileWriter {
 				
 				//Use the write() or writeLine() method of the BufferedWriter class to write
 				//data to the file.
+				//br.write(str, startIndex, size);
 				br.write(str,0,size);  //write to file
 				br.write("\n");
 				System.out.println(br);
@@ -42,8 +43,9 @@ public class ExFileWriter {
 				System.out.println(e);
 			}
 		}
-
+		// close the bufferedWriter
 		br.close();
+		// close the FileWriter
 		fw.close();
 	}
 
