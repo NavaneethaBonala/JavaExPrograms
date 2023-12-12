@@ -18,7 +18,7 @@ class GetFileDetails {
 			System.out.println("Name : "+ f.isFile());
 			System.out.println("Name : "+ f.canRead());
 			System.out.println("Name : "+ f.canWrite());			
-			
+
 			System.out.println("Name : "+ f.getAbsolutePath());
 			System.out.println("Name : "+ f.lastModified());
 		}
