@@ -17,7 +17,7 @@ package ichatcode; // user defined package
 
 import java.util.Scanner;// inbuilt package
 
-public class Calc {// class declaration
+public class BmiCalculator {// class declaration
 
 	public static void main(String[] args) {// main method
 
