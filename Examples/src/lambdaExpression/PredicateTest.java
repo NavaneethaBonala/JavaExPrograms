@@ -7,7 +7,7 @@ In this example we created a static method getBeginWith () which has two paramet
 list of String. Other one is the Predicate. The test method of the Predicate is called within this method
  */
 public class PredicateTest {
-	private static List getBeginWith(List<String> list, Predicate<String> valid) {
+	private static List<String> getBeginWith(List<String> list, Predicate<String> valid) {
 		List<String> selected = new ArrayList<>();
 		list.forEach(country -> { // lambda expression
 			if(valid.test(country)) { // Calling test method on the predicate
