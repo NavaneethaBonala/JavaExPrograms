@@ -6,13 +6,12 @@ public class ShapeFactory {
 	{
 		Shape shape = null;
 		if(s.equalsIgnoreCase("Circle"))
-			shape = (Shape) new Circle();
+			return new Circle();
 		else if(s.equalsIgnoreCase("Square"))
-			shape = (Shape)new Square();
+			return new Square();
 		else if(s.equalsIgnoreCase("Triangle"))
-			shape = (Shape)new Triangle();
-		
-		return shape;
-	}
-
+			return new Triangle();
+		else
+			return shape;
+	}	
 }

@@ -1,4 +1,4 @@
-package overriding;
+package inheritance;
 
 class Animal1 
 {

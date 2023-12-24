@@ -34,6 +34,8 @@ class Dog extends Animal {
 	}
 }
 
+
+
 public class InheritanceExample {
 	public static void main(String[] args) {
 		// Creating an instance of the subclass (Dog)

@@ -6,6 +6,7 @@ class Vehicle {
     }
 }
 
+
 class Car extends Vehicle {
     public Car() {
         // Implicitly calls super(), invoking the constructor of the superclass (Vehicle)
