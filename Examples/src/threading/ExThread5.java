@@ -7,7 +7,7 @@ class First extends Thread
                 for (int i=1;i<=5;i++)
                 {
                         System.out.println("i = " + i);
-// sleep(int milliseconds)
+                        // sleep(int milliseconds)
                         try
                         {
                                 sleep(1000);
@@ -43,11 +43,13 @@ class Second extends Thread
 
 class ExThread5
 {
-        public static void main(String argv[])
+        @SuppressWarnings("removal")
+		public static void main(String argv[])
         {
                 First o1 = new First();
                 Second o2 = new Second();
 
+                
                 o1.start();
                 o2.start();
 
