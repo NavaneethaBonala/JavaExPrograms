@@ -1,7 +1,5 @@
 package threading;
 
-import java.lang.*;
-
 class First1 extends Thread
 {
         public void run()

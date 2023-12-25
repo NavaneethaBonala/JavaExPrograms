@@ -1,16 +1,16 @@
 package singletonpattern1;
 
 //singleton class
-public class Singleton1 {
+public class Message {
 	
-	private static Singleton1 si = new Singleton1();
+	private static Message si = new Message();
 	
-	private Singleton1()
+	private Message()
 	{
 		System.out.println("Object Instance..");
 	}
 	
-	public static Singleton1 getinstance()
+	public static Message getinstance()
 	{
 		
 		return si;
