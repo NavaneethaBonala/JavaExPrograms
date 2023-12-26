@@ -1,5 +1,5 @@
 package constructor;
-
+// COnstructor inheritance
 class Vehicle {
     public Vehicle() {
         System.out.println("Vehicle constructor");
