@@ -1,4 +1,4 @@
-package examples;
+package overloading;
 
 public class Overloading {
 	

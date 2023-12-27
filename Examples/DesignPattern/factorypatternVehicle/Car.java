@@ -2,7 +2,7 @@ package factorypatternVehicle;
 
 //Create concrete product classes (Car and Bike)
 
-class Car implements Vehicle
+public class Car implements Vehicle
 {
 
 	@Override
