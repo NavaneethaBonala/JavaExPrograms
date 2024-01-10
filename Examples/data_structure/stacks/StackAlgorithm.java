@@ -75,7 +75,7 @@ class Operation {
 	}
 }
 // class declaration
-public class MinStack {
+public class StackAlgorithm {
 // main method
 public static void main(String[] args) {
 		// stack is an object 
