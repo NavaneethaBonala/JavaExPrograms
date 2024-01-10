@@ -1,0 +1,69 @@
+package factorypattern2;
+
+public interface OS 
+{	
+	public void spec();// abstract method - specifications
+	
+}
+
+********************************************************
+package factorypattern2;
+
+public class Android implements OS{
+
+	public void spec() {
+		System.out.println("This is Andriod");
+	}
+
+}
+********************************************************
+package factorypattern2;
+
+public class IOS implements OS{
+	
+	public void spec() {
+		System.out.println("This is IOS");
+	}
+
+}
+********************************************************
+package factorypattern2;
+
+public class Windows implements OS
+{
+	
+	public void spec() {
+		System.out.println("This is Windows OS");
+	}
+}
+********************************************************
+package factorypattern2;
+
+public class OperatingSystem {
+	
+	public OS getinstance(String str)
+	{
+		if (str.equalsIgnoreCase("Open"))
+				return new Android();
+		else if (str.equalsIgnoreCase("Closed"))
+				return new IOS();
+		else 
+			return new Windows();
+	}
+}
+********************************************************
+package factorypattern2;
+
+public class FactoryPhone {
+
+	public static void main(String[] args) {
+		
+		OperatingSystem ops = new OperatingSystem();
+		OS obj = ops.getinstance("Closed");
+		obj.spec();
+		OS obj1 = ops.getinstance("Open");
+		obj1.spec();
+		OS obj2 = ops.getinstance("xyz");
+		obj2.spec();
+	}
+}

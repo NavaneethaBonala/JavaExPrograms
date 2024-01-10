@@ -10,9 +10,6 @@ public class FactoryPhone {
 		OS obj1 = ops.getinstance("Open");
 		obj1.spec();
 		OS obj2 = ops.getinstance("xyz");
-		obj2.spec();
-		
-
+		obj2.spec();		
 	}
-
 }

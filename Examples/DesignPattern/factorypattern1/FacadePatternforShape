@@ -1,0 +1,95 @@
+/*
+ * 1. Create a simple Factory Pattern for creating shapes 
+ * (e.g., Circle, Square, Triangle).
+ *  Define an interface called Shape with a draw method, 
+ *  and create concrete classes Circle, Square, and Triangle that implement the Shape interface. 
+ *  Implement a ShapeFactory that has a method createShape which takes a string 
+ *  (e.g., "circle", "square", "triangle") as input and returns the corresponding shape object.
+ *   Write a program to demonstrate the usage of the factory to create different shapes 
+ *   and call their draw methods. 
+ */
+
+
+package factorypattern1;
+
+public interface Shape {
+
+	public void drawshape() ;
+		
+}
+**************************************************
+
+package factorypattern1;
+
+public class Circle implements Shape {
+	
+	public void drawshape()
+	{
+		System.out.println("circle is drawn");
+	}
+
+}
+ 
+ **************************************************
+ 
+ package factorypattern1;
+
+public class Square implements Shape{
+	
+	public void drawshape()
+	{
+		System.out.println("Square is drawn");
+	}
+}
+  
+****************************************************
+package factorypattern1;
+
+public class Triangle implements Shape{
+	
+	public void drawshape()
+	{
+		System.out.println("Triangle is drawn");
+	}
+	
+}
+*****************************************************
+package factorypattern1;
+
+public class ShapeFactory {
+	
+	public Shape createShape(String s)
+	{
+		Shape shape = null;
+		if(s.equalsIgnoreCase("Circle"))
+			return new Circle();
+		else if(s.equalsIgnoreCase("Square"))
+			return new Square();
+		else if(s.equalsIgnoreCase("Triangle"))
+			return new Triangle();
+		else
+			return shape;
+	}	
+}
+******************************************************
+
+package factorypattern1;
+
+public class FactoryMethodPattern {
+
+	public static void main(String[] args) {
+
+		ShapeFactory sf = new ShapeFactory();
+		
+		Shape s = sf.createShape("Circle");
+		s.drawshape();
+		
+		Shape s1 = sf.createShape("Square");
+		s1.drawshape();
+		
+		Shape s2 = sf.createShape("Triangle");
+		s2.drawshape();
+	}
+
+}
+  
