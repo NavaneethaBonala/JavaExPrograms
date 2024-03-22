@@ -10,10 +10,14 @@ public class Array3D {
 		
 		for(int i=0;i<c.length;i++)
 		{
+			
 			for(int j=0;j<c[i].length;j++)
 			{
-				for(int k=0;k<c[i][j].length;k++)
+				
+				for(int k=0;k<c[i][j].length;k++) {
 					System.out.print(c[i][j][k]+"\t");
+					
+				}
 				System.out.println();
 			}
 			System.out.println();

@@ -4,8 +4,9 @@ import java.io.*;
 
 public class ExFileReader {
 	public static void main(String[] args) throws IOException
-	{
-		FileReader fr=new FileReader("D:\\anudiptext1.txt");
+	{	// opens  the existing file to read
+		FileReader fr=new FileReader("d:\\anudiptext.txt");
+		//  it is used to read character by character
 		BufferedReader br=new BufferedReader(fr);
 		String str="";
 
@@ -13,7 +14,7 @@ public class ExFileReader {
 		{     
 			try
 			{      
-				str=br.readLine(); // read from file
+				str=br.readLine(); // reads from file
 				if(str.equals(null))
 					break;
 				System.out.println(str);

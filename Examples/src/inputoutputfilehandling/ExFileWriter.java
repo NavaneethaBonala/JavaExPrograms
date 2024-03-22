@@ -8,7 +8,7 @@ public class ExFileWriter {
 		//to read input from keyboard
 		DataInputStream dis=new DataInputStream(System.in);
 		//only to open the file in write mode           
-		FileWriter fw = new FileWriter("d:\\anudiptext.txt",true);
+		FileWriter fw = new FileWriter("d:\\shiva.txt",true);
 		//it helps  write data to the file
 		BufferedWriter br=new BufferedWriter(fw);
 

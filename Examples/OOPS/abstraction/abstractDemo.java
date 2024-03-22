@@ -3,6 +3,11 @@ package abstraction;
 abstract class Car{
 	// abstract method
 	public abstract void drive();
+	
+	public Car()
+	{
+		
+	}
 	// concrete method
 	public void playMusic()
 	{
@@ -23,6 +28,7 @@ public class abstractDemo {
 	public static void main(String[] args) {
 		// WagonR obj is created 
 		Car obj = new WagonR();
+
 		// we can create reference with abstract class
 		// but we cannot create object with abstract class
 		 obj.drive();

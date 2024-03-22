@@ -1,9 +1,11 @@
 package inputoutputfilehandling;
-import java.io.*;
 
-public class ExFiledelete {
-	
+import java.io.File;
+
+public class IODelete {
+
 	public static void main(String[] args) {
+		
 		File f = new File("d:\\sort.java");
 
         if (f.exists())
@@ -15,6 +17,7 @@ public class ExFiledelete {
                 }
         else
                 System.out.println("Dir. not found ....");
-        }
+
+	}
 
 }

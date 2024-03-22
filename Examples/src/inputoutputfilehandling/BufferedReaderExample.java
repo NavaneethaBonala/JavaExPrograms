@@ -2,11 +2,11 @@ package inputoutputfilehandling;
 
 import java.io.*;  
 
-public class BufferedReaderExample 
+public class BufferedReaderExample
 {  
     public static void main(String args[])throws Exception
     {    
-          FileReader fr=new FileReader("D:\\testout.txt");    
+          FileReader fr=new FileReader("D:\\testout.txt");   
           BufferedReader br=new BufferedReader(fr);    
   
           int i;    

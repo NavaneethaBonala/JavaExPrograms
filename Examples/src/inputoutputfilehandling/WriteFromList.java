@@ -1,6 +1,7 @@
 package inputoutputfilehandling;
 
 import java.io.*;
+
 public class WriteFromList
 {
 	public static void main(String[] args)

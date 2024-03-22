@@ -31,7 +31,9 @@ public class PerfectEx {
 		if (sum==array[i])
 			System.out.println(array[i]+" is a Perfect Number ");
 		
-
+			//Number N is defined as any positive integer where the sum of its divisors minus 
+			//the number itself equals the number.
+			//The first few of these, already known to the ancient Greeks, are 6, 28, 496, and 8128.
 		}
 	}
 
